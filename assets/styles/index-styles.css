@@ -121,9 +121,16 @@ main article{
   font-size: 1.8rem;
 }
 
-#Bio_Project{
+.Journey_grid_items{
   font-size: 1.5rem;
 }
+article figure{
+  background-color: #3f3f3f;
+  background: linear-gradient(to bottom left, #c9c6c6, #222222);
+  padding: 7px;
+  border: 7px groove rgb(38, 104, 124);
+}
+
 
 /*****************************************************************************/
 /***************                                               ***************/
