@@ -23,7 +23,7 @@ header{
   border-style: groove;
   border-width: 10px;
   border-color: #8a8a8a;
-  background-color: rgba(105, 104, 104, 0.589);
+  background-color: rgba(105, 104, 104, 0.4);
   height: 120px;
   width:100%;
 }
@@ -50,19 +50,19 @@ nav li{
   font-size: 1.5rem;
   font-weight: 750;
   padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-nav a{
+a{
   text-decoration: none;
   color: white;
 }
-nav a::after{
+a::after{
   color: white;
 }
 
-nav a:hover{
+a:hover{
   color: rgb(95, 211, 226);
   text-decoration: underline;
 }
@@ -74,59 +74,63 @@ a.glow:hover{
 }
 
 main{
+  box-sizing: border-box;
+  margin: 15px 1px 15px 1px;
   display: flex;
-  margin: 15px 5px 15px 5px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-main article{
-  display: grid;
-  grid-template-columns: 125px 125px 125px;
-  gap: 18px;
+
+main aside{
+  height: 100%;
+  width: 30%;
   color: white;
-text-align: center;
-}
-
-main article div{
   border: 2px solid white;
-  margin: 5px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(105, 104, 104, 0.4);
 }
 
+main aside h1{
+text-decoration: underline;
+}
 
-/*****************************************************************************/
+main article{
+  height: 100%;
+  width: 65%;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px 10px 20px;
+}
+
+#Journey{
+  height: 100%;
+  text-align: center;
+  background-color: rgba(105, 104, 104, 0.4);
+}
+#Journey h1{
+  font-size: 2.5rem;
+}
+
+#Journey_grid{
+  display: grid;
+  grid-template-columns: 450px 450px;
+  justify-content: space-evenly;
+}
+
+#Main_Project{
+  margin: 50px 0px 50px 0px;
+  font-size: 1.8rem;
+}
+
+#Bio_Project{
+  font-size: 1.5rem;
+}
+
 /*****************************************************************************/
 /***************                                               ***************/
 /***************          Below is the @media section          ***************/
 /***************                                               ***************/
 /*****************************************************************************/
-/*****************************************************************************/
 
-
-/*******************************/
-/* Below is for media @ 1024px */
-/*******************************/
-@media screen and (max-width: 1024px){
-  header {padding: 5px; height: 200px; flex-wrap: wrap;
-      background-color: rgba(126, 126, 126, 0.3);}
-  header h1 {font-size: 4rem;
-      justify-content: center;
-      color: rgb(28, 200, 206);}
-header h1.glow
-      {text-shadow: none;}
-  nav
-      {display: flex;
-      margin-top: 5px;}
-  nav li{
-      list-style: none;
-      flex-direction: row;
-      justify-self: space-evenly;
-      font-size: 1.4rem;
-      padding-left: 80px;
-      padding-right: 80px;
-      color: rgb(194, 194, 194);
-      border-right: 1px solid white;}
-  nav li:last-child
-      {border-right: none;}
-  }
 /******************************/
 /* Below is for media @ 992px */
 /******************************/
@@ -200,138 +204,6 @@ nav li:last-child
       font-size: .7rem;
       padding-left: 50px;
       padding-right: 50px;
-      color: rgb(194, 194, 194);
-      border-right: 1px solid white;}
-  nav li:last-child
-      {border-right: none;}
-  }
-/******************************/
-/* Below is for media @ 450px */
-/******************************/
-@media screen and (max-width: 450px){
-header {padding: 5px; height: 105px; flex-wrap: wrap;
-    background-color: rgba(126, 126, 126, 0.3);}
-header h1 {font-size: 1.6rem;
-    justify-content: center;
-    color: rgb(28, 200, 206);}
-header h1.glow
-    {text-shadow: none;}
-nav
-    {display: flex;
-    margin-top: 5px;}
-nav li{
-    list-style: none;
-    flex-direction: row;
-    justify-self: space-evenly;
-    font-size: .8rem;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 5px;
-    color: rgb(194, 194, 194);
-    border-right: 1px solid white;}
-nav li:last-child
-    {border-right: none;}
-}
-/******************************/
-/* Below is for media @ 430px */
-/******************************/
-@media screen and (max-width: 430px){
-  header {padding: 5px; height: 90px; flex-wrap: wrap;
-      background-color: rgba(126, 126, 126, 0.3);}
-  header h1 {font-size: 1.3rem;
-      justify-content: center;
-      color: rgb(28, 200, 206);}
-  header h1.glow
-      {text-shadow: none;}
-  nav
-      {display: flex;
-      padding-bottom: 5px;}
-  nav li{
-      list-style: none;
-      flex-direction: row;
-      justify-self: space-evenly;
-      font-size: .6rem;
-      padding-left: 40px;
-      padding-right: 40px;
-      margin-top: 5px;
-      color: rgb(194, 194, 194);
-      border-right: 1px solid white;}
-  nav li:last-child
-      {border-right: none;}
-  }
-/******************************/
-/* Below is for media @ 380px */
-/******************************/
-@media screen and (max-width: 380px){
-  header {padding: 0; height: 75px; flex-wrap: wrap;
-      background-color: rgba(126, 126, 126, 0.3);}
-  header h1 {font-size: 1.1rem;
-      justify-content: center;
-      color: rgb(28, 200, 206);}
-  header h1.glow
-      {text-shadow: none;}
-  nav
-      {display: flex;
-      margin-top: 5px;}
-  nav li{
-      list-style: none;
-      flex-direction: row;
-      justify-self: space-evenly;
-      font-size: .5rem;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 5px;
-      color: rgb(194, 194, 194);
-      border-right: 1px solid white;}
-  nav li:last-child
-      {border-right: none;}
-  }
-/******************************/
-/* Below is for media @ 360px */
-/******************************/
-@media screen and (max-width: 360px){
-  header {padding: 0; height: 80px; flex-wrap: wrap;
-      background-color: rgba(126, 126, 126, 0.3);}
-  header h1 {font-size: 1.1rem;
-      justify-content: center;
-      color: rgb(28, 200, 206);}
-  header h1.glow
-      {text-shadow: none;}
-  nav
-      {display: flex;}
-  nav li{
-      list-style: none;
-      flex-direction: row;
-      justify-self: space-evenly;
-      font-size: .5rem;
-      padding-left: 35px;
-      padding-right: 35px;
-      color: rgb(194, 194, 194);
-      border-right: 1px solid white;}
-  nav li:last-child
-      {border-right: none;}
-  }
-/******************************/
-/* Below is for Media @ 280px */
-/******************************/
-@media screen and (max-width: 300px){
-  header {padding: 0; height: 65px; flex-wrap: wrap;
-      background-color: rgba(126, 126, 126, 0.3);
-      justify-content: space-around;}
-  header h1 {font-size: .7rem;
-      justify-content: center;
-      color: rgb(28, 200, 206);}
-  header h1.glow
-      {text-shadow: none;}
-  nav
-      {display: flex;}
-  nav li{
-      list-style: none;
-      flex-direction: row;
-      justify-self: space-evenly;
-      font-size: .5rem;
-      padding-left: 20px;
-      padding-right: 20px;
       color: rgb(194, 194, 194);
       border-right: 1px solid white;}
   nav li:last-child
