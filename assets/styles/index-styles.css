@@ -127,9 +127,22 @@ main aside p{
   margin-top: 10px;
 }
 
+main aside h1{
+  text-align: center;
+}
+
+main nav{
+  padding: 20px;
+}
+
+main aside nav p{
+  text-align: center;
+  padding-bottom: 40px;
+}
+
 main aside nav ul{
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .list-tweak{
@@ -169,6 +182,19 @@ main article{
   font-size: 1.8rem;
 }
 
+#Bio{
+  width: 400px;
+  padding: auto;
+  padding-right: 10px;
+}
+
+#DieDjinn{
+  width: 400px;
+  padding: auto;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
 .Journey_grid_items{
   font-size: 1.5rem;
 }
@@ -178,8 +204,73 @@ article figure{
   padding: 7px;
   border: 7px groove rgb(38, 104, 124);
 }
+footer{
+  background-color: rgba(255, 255, 255, 0.733);
+  height: 80px;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 5px;
+  border: 10px groove rgb(203, 206, 16);
+}
 
-
+/*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************//*****************************************************************************/
+/***************                                               ***************/
+/***************          Below is the @media section          ***************/
+/***************                                               ***************/
+/*****************************************************************************/
 /*****************************************************************************/
 /***************                                               ***************/
 /***************          Below is the @media section          ***************/
@@ -190,77 +281,220 @@ article figure{
 /* Below is for media @ 992px */
 /******************************/
 @media screen and (max-width: 992px){
-header {padding: 5px; height: 160px; flex-wrap: wrap;
-    background-color: rgba(126, 126, 126, 0.3);}
-header h1 {font-size: 3rem;
-    justify-content: center;
-    color: rgb(28, 200, 206);}
-header h1.glow
-    {text-shadow: none;}
-nav
-    {display: flex;
-    margin-top: 5px;}
-nav li{
+  header{
+    display: grid; padding: 5px; height: 140px; width: 100%; margin-top: 0px;
+    background-color: rgba(126, 126, 126, 0.3);
+  }
+  header h1 {
+    font-size: 3rem; padding-right: 80px; color:aqua;
+    text-align: center;
+  }
+  header h1.glow{
+    text-shadow: none;
+  }
+  header nav{
+    display: flex;
+    margin-top: 5px;
+  }
+  header nav li{
+    font-size: 1rem;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-right: 1px solid white;
+  }
+  nav li:last-child{
+    border-right: none;
+  }
+  main{
+    box-sizing: border-box;
+    margin: 15px 1px 15px 1px;
+    display: grid;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  main aside{
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    border: 10px groove #8a8a8a;
+    padding: 10px 20px 20px 20px;
+    background-color: rgba(105, 104, 104, 0.4);
+  }
+  main aside h1{
+    font-size: 3.2rem;
+    text-decoration: underline;
+  }
+  main aside h1 figure{
+    display: block;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-right: 20px;
+    padding: 15px 15px 0px 15px;
+    background: linear-gradient
+    (to bottom right, rgb(136, 182, 182), rgb(0, 0, 0), rgb(85, 61, 85));
+    border: 3px groove #8a8a8a;
+  }
+  main aside h1 figure img{
+    border: 8px groove #8a8a8a;
+  }
+  main aside p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+  main aside nav{
+    padding: 0px 30px 15px 30px;
+    background: linear-gradient(to top right, rgba(120, 45, 155, 0.6), rgba(79, 152, 155, 0.61));
+    border: 5px inset white;
+    margin-top: 20px;
+  }
+  main aside nav ul{
     list-style: none;
-    flex-direction: row;
-    justify-self: space-evenly;
-    font-size: 1.2rem;
-    padding-left: 80px;
-    padding-right: 80px;
-    color: rgb(194, 194, 194);
-    border-right: 1px solid white;}
-nav li:last-child
-    {border-right: none;}
+    font-size: 2rem;
+  }
+  .list-tweak{
+    text-decoration: underline;
+    color: rgb(43, 201, 212);
+  }
+  main article{
+    height: 100%;
+    width: 100%;
+    color: white;
+    border: 10px groove #8a8a8a;
+    padding: 10px 20px 10px 20px;
+  }
+  #Journey{
+    height: 100%;
+    text-align: center;
+    background-color: rgba(105, 104, 104, 0.4);
+  }
+  #Journey h1{
+    font-size: 2.5rem;
+  }
+  #Journey_grid{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 450px 450px;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+  article figure{
+    background-color: #3f3f3f;
+    background: linear-gradient(to bottom left, #c9c6c6, #222222);
+    padding: 7px;
+    border: 10px groove rgb(38, 104, 124);
+  }
+  footer{
+    background-color: rgba(255, 255, 255, 0.733);
+    height: 80px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5px;
+    border: 10px groove rgb(203, 206, 16);
+  }
 }
 /******************************/
 /* Below is for media @ 768px */
 /******************************/
 @media screen and (max-width: 768px){
-header {padding: 5px; height: 105px; flex-wrap: wrap;
-    background-color: rgba(126, 126, 126, 0.3);}
-header h1 {font-size: 1.8rem;
-    justify-content: center;
-    color: rgb(28, 200, 206);}
-header h1.glow
-    {text-shadow: none;}
-nav
-    {display: flex;
-    margin-top: 5px;}
-nav li{
-    list-style: none;
-    flex-direction: row;
-    font-size: .8rem;
-    padding-left: 80px;
-    padding-right: 80px;
-    color: rgb(194, 194, 194);
-    border-right: 1px solid white;}
-nav li:last-child
-    {border-right: none;}
+  footer{
+    background-color: rgba(255, 255, 255, 0.733);
+    height: 80px;
+    color: rgb(0, 0, 0);
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 5px;
+    border: 10px groove rgb(203, 206, 16);
+  }
 }
+
 /******************************/
-/* Below is for media @ 540px */
+/* Below is for media @ 992px */
 /******************************/
 @media screen and (max-width: 540px){
-  header {padding: 0; height: 100px; flex-wrap: wrap;
-      background-color: rgba(126, 126, 126, 0.3);}
-  header h1 {font-size: 1.8rem;
-      justify-content: center;
-      color: rgb(28, 200, 206);
-    padding-left: 50px;
-  padding-right: 50px;}
-  header h1.glow
-      {text-shadow: none;}
-  nav
-      {display: flex;}
-  nav li{
-      list-style: none;
-      flex-direction: row;
-      justify-self: space-evenly;
-      font-size: .7rem;
-      padding-left: 50px;
-      padding-right: 50px;
-      color: rgb(194, 194, 194);
-      border-right: 1px solid white;}
-  nav li:last-child
-      {border-right: none;}
+  header{
+    display: grid; padding: 5px; height: 100px; width: 100%; margin-top: 0px;
+    background-color: rgba(126, 126, 126, 0.3);
   }
+  header h1 {
+    font-size: 1.4rem; padding-right: 80px; color:aqua;
+    text-align: center;
+  }
+  header nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+  }
+  header nav li{
+    font-size: .6rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid white;
+  }
+  main aside{
+    width: 100%;
+  }
+  main aside h1{
+    font-size: 2.2rem;
+  }
+  main aside nav{
+    background: linear-gradient(to top right, rgba(76, 29, 99, 0.6), rgba(30, 75, 77, 0.61));
+  }
+  main aside nav h1{
+    font-size: 2rem;
+  }
+  main aside nav p{
+    font-size: 1rem;
+  }
+  main aside nav ul{
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  main article{
+    width: 100%;
+  }
+  #Journey{
+    height: 100%;
+    text-align: center;
+    background-color: rgba(105, 104, 104, 0.4);
+  }
+  #Journey h1{
+    font-size: 2.2rem;
+  }
+  #Journey_grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+  .Journey_grid_items{
+    font-size: 1.2rem;
+  }
+  #Bio{
+    width: 220px;
+    padding: auto;
+    padding-right: 10px;
+  }
+  #DieDjinn{
+    width: 220px;
+    height: 160px;
+  }
+  article figure{
+    background-color: #3f3f3f;
+    background: linear-gradient(to bottom left, #c9c6c6, #222222);
+    padding: 7px;
+    border: 7px groove rgb(38, 104, 124);
+  }
+  footer{
+    background-color: rgba(255, 255, 255, 0.733);
+    height: 80px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 18px;
+    border: 10px groove rgb(203, 206, 16);
+  }
+}
