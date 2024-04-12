@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
 body{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
   Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -16,7 +15,6 @@ body{
   overflow-x: hidden;
   overflow-y: scroll;
 }
-
 header{
   display: flex;
   justify-content: space-around;
@@ -29,26 +27,22 @@ header{
   width:98%;
   margin: auto;
   margin-top: 10px;
-
 }
-
 header h1{
   flex: 2;
   margin-left: 80px;
   font-size: 3.5rem;
   color: rgb(0, 0, 0);
 }
-
+/* Extra Glow on Header to make it pop */
 header h1.glow{
   text-shadow: 0 0 25px rgb(255, 255, 255);
   text-shadow: 0 0 30px rgb(255, 255, 255);
   text-shadow: 0 0 35px rgb(255, 255, 255);
 }
-
 header nav{
   display: flex;
 }
-
 header nav li{
   list-style: none;
   flex-direction: row;
@@ -58,41 +52,16 @@ header nav li{
   padding-left: 40px;
   padding-right: 40px;
 }
-
 a{
   text-decoration: none;
   color: white;
 }
-a::after{
-  color: white;
-}
-
-a:hover{
-  color: rgb(95, 211, 226);
-  text-decoration: underline;
-}
-
-a.glow:hover{
-  text-shadow: 0 0 40px rgb(255, 0, 234, 1);
-  text-shadow:  0 0 35px rgb(255, 0, 234, 1);
-  text-shadow:  0 0 30px rgb(255, 0, 234, 1);
-}
-
-.transform:hover{
-  transform: scale(103%)
-}
-
-.transform-large:hover{
-  transform: scale(120%);
-}
-
 main{
   box-sizing: border-box;
   margin: 15px 1px 15px 1px;
   display: flex;
   justify-content: space-evenly;
 }
-
 main aside{
   height: 100%;
   width: 30%;
@@ -101,12 +70,10 @@ main aside{
   padding: 10px 20px 20px 20px;
   background-color: rgba(105, 104, 104, 0.4);
 }
-
 main aside h1{
   font-size: 3.2rem;
 text-decoration: underline;
 }
-
 main aside h1 figure{
   display: block;
   box-sizing: border-box;
@@ -116,87 +83,34 @@ main aside h1 figure{
   background: linear-gradient(to bottom right, rgb(136, 182, 182), rgb(0, 0, 0), rgb(85, 61, 85));
   border: 3px groove #8a8a8a;
 }
-
 main aside h1 figure img{
   border: 8px groove #8a8a8a;
 }
-
 main aside p{
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.4rem;
   margin-top: 10px;
 }
-
 main aside h1{
   text-align: center;
 }
-
 main nav{
   padding: 20px;
 }
-
 main aside nav p{
   text-align: center;
   padding-bottom: 40px;
 }
-
 main aside nav ul{
   list-style: none;
   font-size: 1.6rem;
 }
-
-.list-tweak{
-  text-decoration: underline;
-  color: rgb(165, 8, 152);
-}
-
-.margin-tweak{
-  float: right;
-}
-
 main article{
   height: 100%;
   width: 65%;
   color: white;
   border: 10px groove #8a8a8a;
   padding: 10px 20px 10px 20px;
-}
-
-#Journey{
-  height: 100%;
-  text-align: center;
-  background-color: rgba(105, 104, 104, 0.4);
-}
-#Journey h1{
-  font-size: 2.5rem;
-}
-
-#Journey_grid{
-  display: grid;
-  grid-template-columns: 450px 450px;
-  justify-content: space-evenly;
-}
-
-#Main_Project{
-  margin: 20px 0px 50px 0px;
-  font-size: 1.8rem;
-}
-
-#Bio{
-  width: 400px;
-  padding: auto;
-  padding-right: 10px;
-}
-
-#DieDjinn{
-  width: 400px;
-  padding: auto;
-  padding-right: 10px;
-  margin-bottom: 20px;
-}
-
-.Journey_grid_items{
-  font-size: 1.5rem;
 }
 article figure{
   background-color: #3f3f3f;
@@ -213,69 +127,82 @@ footer{
   padding-top: 5px;
   border: 10px groove rgb(203, 206, 16);
 }
+/* ********************************** */
+/* ********   ID's Section   ******** */
+/* ********************************** */
+#Journey{
+  height: 100%;
+  text-align: center;
+  background-color: rgba(105, 104, 104, 0.4);
+}
+#Journey h1{
+  font-size: 2.5rem;
+}
+#Journey_grid{
+  display: grid;
+  grid-template-columns: 450px 450px;
+  justify-content: space-evenly;
+}
+#Main_Project{
+  margin: 20px 0px 50px 0px;
+  font-size: 1.8rem;
+}
+#Bio{
+  width: 400px;
+  padding: auto;
+  padding-right: 10px;
+}
+#DieDjinn{
+  width: 400px;
+  padding: auto;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
 
-/*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************//*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************/
-/*****************************************************************************/
-/***************                                               ***************/
-/***************          Below is the @media section          ***************/
-/***************                                               ***************/
-/*****************************************************************************/
+/* ********************************** */
+/* ******** Text decorations ******** */
+/* ********************************** */
+a::after{
+  color: white;
+}
+a:hover{
+  color: rgb(95, 211, 226);
+  text-decoration: underline;
+}
+a.glow:hover{
+  text-shadow: 0 0 40px rgb(255, 0, 234, 1);
+  text-shadow:  0 0 35px rgb(255, 0, 234, 1);
+  text-shadow:  0 0 30px rgb(255, 0, 234, 1);
+}
+.transform:hover{
+  transform: scale(103%)
+}
+.transform-large:hover{
+  transform: scale(120%);
+}
+
+.list-tweak{
+  text-decoration: underline;
+  color: rgb(165, 8, 152);
+}
+.margin-tweak{
+  float: right;
+}
+.Journey_grid_items{
+  font-size: 1.5rem;
+}
+/* ********************************** */
+/* ********************************** */
+/* ********************************** */
+
+/****************************************************************************/
+/*****************                                         ******************/
+/*****************       Below is @mediaquery section      ******************/
+/*****************                                         ******************/
+/****************************************************************************/
 
 /******************************/
 /* Below is for media @ 992px */
@@ -381,7 +308,6 @@ footer{
     font-size: 1.6rem;
   }
 }
-
 /******************************/
 /* Below is for media @ < 540px */
 /******************************/
