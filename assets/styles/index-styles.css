@@ -158,6 +158,20 @@ footer{
   padding-right: 10px;
   margin-bottom: 20px;
 }
+
+#domain-hunter-HQ{
+  width: 400px;
+  height: 300px;
+  padding: auto;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+
+#domain-hunter{
+  margin-top: 50px;
+  height: 425px;
+}
 /* ********************************** */
 /* ********************************** */
 /* ********************************** */
